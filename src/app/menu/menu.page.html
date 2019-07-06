@@ -1,0 +1,32 @@
+<!-- <ion-split-pane when="false"> -->
+
+<ion-split-pane>
+  <!-- type="push" The display type of the menu. Available options: "overlay", "reveal", "push". -->
+  <ion-menu contentId="content" type="push">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle auto-hide="false" *ngFor="let p of pages">
+          <ion-item [routerLink]="p.url" routerDirection="root" [class.active-item]="selectedPath.startsWith(p.url)">
+            <ion-label>
+              <ion-icon name="quote" slot="start"></ion-icon>
+              {{ p.title }}
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-item tappable routerLink="/login" routerDirection="root">
+          <ion-icon name="close" slot="start"></ion-icon>
+          Logout
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="content" main>
+    <ng-progress [color]="'#E91E63'" [spinner]="true"></ng-progress>
+  </ion-router-outlet>
+</ion-split-pane>

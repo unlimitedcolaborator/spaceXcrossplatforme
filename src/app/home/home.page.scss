@@ -1,0 +1,16 @@
+
+.center {
+    display: flex; /* or inline-flex */
+    justify-content:  center;
+  }
+
+#hoverimg{
+    background-image:url("../../assets/pictures/EMclass.jpeg");
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    
+}
+#hoverimg:hover{
+    background-image:url("../../assets/pictures/images.jpeg");
+}
