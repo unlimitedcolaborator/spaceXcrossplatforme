@@ -25,7 +25,7 @@ const routes: Routes = [
       },
       {
         path: 'LandingPads',
-        loadChildren: '../landing-pads/landing-pads.module#LandingPadsageModule'
+        loadChildren: '../landing-pads/landing-pads.module#LandingPadsPageModule'
       },
       {
         path: 'LandingPads/details',
@@ -33,7 +33,7 @@ const routes: Routes = [
       },
       {
         path: 'capsules',
-        loadChildren: '../capsules/capsules.module'
+        loadChildren: '../capsules/capsules.module#CapsulesPageModule'
       },
       {
         path: 'LunchPads',
