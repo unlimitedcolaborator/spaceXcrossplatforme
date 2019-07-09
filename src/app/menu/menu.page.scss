@@ -1,3 +1,16 @@
 .active-item {
     border-left: 6px solid var(--ion-color-secondary);
 }
+
+.enbasContainer{
+    display: flex;
+    margin: auto;
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 100%;
+}
+.listFlex{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}

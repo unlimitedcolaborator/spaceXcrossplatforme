@@ -15,20 +15,56 @@ export class MenuPage implements OnInit {
       url: '/menu/home'
     },
     {
-      title: 'Missions',
-      url: '/menu/Missions'
+      title: 'capsules',
+      url: '/menu/capsules'
     },
     {
-      title: 'LunchPads',
-      url: '/menu/LunchPads'
+      title: 'Cores',
+      url: '/menu/cores'
+    },
+    {
+      title: 'Dragons',
+      url: '/menu/dragons'
+    },
+    {
+      title: 'History',
+      url: '/menu/history'
+    },
+    {
+      title: 'Info',
+      url: '/menu/info'
     },
     {
       title: 'LandingPads',
       url: '/menu/LandingPads'
     },
     {
-      title: 'capsules',
-      url: '/menu/capsules'
+      title: 'Launches',
+      url: '/menu/launches'
+    },
+    {
+      title: 'LunchPads',
+      url: '/menu/LunchPads'
+    },
+    {
+      title: 'Missions',
+      url: '/menu/Missions'
+    },
+    {
+      title: 'Payload',
+      url: '/menu/payload'
+    },
+    {
+      title: 'Rockets',
+      url: '/menu/rockets'
+    },
+    {
+      title: 'Roadster',
+      url: '/menu/roadster'
+    },
+    {
+      title: 'Ships',
+      url: '/menu/ships'
     },
   ];
   constructor(

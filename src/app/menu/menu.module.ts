@@ -36,9 +36,51 @@ const routes: Routes = [
         loadChildren: '../capsules/capsules.module#CapsulesPageModule'
       },
       {
+        path: 'cores', 
+        loadChildren: './cores/cores.module#CoresPageModule' 
+
+      },
+      {
         path: 'LunchPads',
         loadChildren: '../second/second.module#SecondPageModule'
-      }
+      },
+      { 
+        path: 'dragons', 
+        loadChildren: './dragons/dragons.module#DragonsPageModule' 
+      },
+      {
+         path: 'history',
+          loadChildren: './history/history.module#HistoryPageModule' 
+      },
+      {
+         path: 'info', loadChildren: './info/info.module#InfoPageModule' 
+        },
+      {
+         path: 'launches', 
+         loadChildren: './launches/launches.module#LaunchesPageModule' 
+        },
+      {
+         path: 'missions', 
+         loadChildren: './missions/missions.module#MissionsPageModule' 
+        },
+      {
+         path: 'payload', 
+         loadChildren: './payload/payload.module#PayloadPageModule' 
+        },
+      {
+         path: 'rockets', 
+         loadChildren: './rockets/rockets.module#RocketsPageModule' 
+        },
+      {
+         path: 'roadster', 
+         loadChildren: './roadster/roadster.module#RoadsterPageModule' 
+        },
+      {
+         path: 'ships', 
+         loadChildren: './ships/ships.module#ShipsPageModule' },
+      {
+         path: 'missions', 
+         loadChildren: './missions/missions.module#MissionsPageModule' },
     ]
   }
 ];

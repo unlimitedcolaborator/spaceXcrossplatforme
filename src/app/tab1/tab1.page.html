@@ -8,17 +8,6 @@
 </ion-header>
 <ion-content>
 
-  <!-- <app-skeleton *ngIf="!observableRockets"></app-skeleton>
-  <ion-list>
-    <ion-item *ngFor="let r of observableRockets | async" [ngClass]="{'active': r.active, 'inactive': !r.active}"
-      class="ion-activatable" (click)="buttonClick(r.id)">
-      <ion-ripple-effect></ion-ripple-effect>
-      <ion-label>
-        {{ r.rocket_name }}
-      </ion-label>
-    </ion-item>
-  </ion-list> -->
-
   <app-skeleton *ngIf="!rockets"></app-skeleton>
   <ion-list>
     <ion-item *ngFor="let r of rockets" [ngClass]="{'active': r.active, 'inactive': !r.active}"
