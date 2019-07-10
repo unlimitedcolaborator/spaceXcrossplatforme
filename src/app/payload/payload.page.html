@@ -6,4 +6,13 @@
 
 <ion-content>
 
+    <ion-list>
+        <ion-item *ngFor="let p of payloads" (click)="buttonClick(p.id)">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-label>
+            {{ p.payload_id }} 
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
 </ion-content>

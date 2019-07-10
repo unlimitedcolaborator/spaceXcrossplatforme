@@ -55,12 +55,12 @@ export class MenuPage implements OnInit {
       url: '/menu/payload'
     },
     {
-      title: 'Rockets',
-      url: '/menu/rockets'
-    },
-    {
       title: 'Roadster',
       url: '/menu/roadster'
+    },
+    {
+      title: 'Rockets',
+      url: '/menu/rockets'
     },
     {
       title: 'Ships',

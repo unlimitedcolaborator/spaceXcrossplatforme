@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { NgProgress } from '@ngx-progressbar/core';
+import {Ships} from '../Models/ships.model';
+import {ShipsService} from '../services/ships.service';
 
 @Component({
   selector: 'app-ships',
@@ -6,10 +10,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ships.page.scss'],
 })
 export class ShipsPage implements OnInit {
+  ships : Ships[];
+  observableships: Observable<Ships[]>;
 
-  constructor() { }
+constructor(private shipsService : ShipsService ) { }
 
-  ngOnInit() {
-  }
+ngOnInit() {
+  this.shipsService.getShips().subscribe(result => {
+    this.ships = result;
+  });
+
+  setTimeout(() => {
+    this.observableships = this.shipsService.getShips();
+  },
+    2000);
+}
+
+buttonClick(shipsId: string) {
+  console.log(shipsId);
+}
 
 }
