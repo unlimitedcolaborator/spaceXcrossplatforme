@@ -37,7 +37,7 @@ const routes: Routes = [
       },
       {
         path: 'cores', 
-        loadChildren: './cores/cores.module#CoresPageModule' 
+        loadChildren: '../cores/cores.module#CoresPageModule' 
 
       },
       {
@@ -46,41 +46,38 @@ const routes: Routes = [
       },
       { 
         path: 'dragons', 
-        loadChildren: './dragons/dragons.module#DragonsPageModule' 
+        loadChildren: '../dragons/dragons.module#DragonsPageModule' 
       },
       {
          path: 'history',
-          loadChildren: './history/history.module#HistoryPageModule' 
+          loadChildren: '../history/history.module#HistoryPageModule' 
       },
       {
-         path: 'info', loadChildren: './info/info.module#InfoPageModule' 
-        },
+         path: 'info',
+        loadChildren: '../info/info.module#InfoPageModule' 
+      },
       {
          path: 'launches', 
-         loadChildren: './launches/launches.module#LaunchesPageModule' 
-        },
-      {
-         path: 'missions', 
-         loadChildren: './missions/missions.module#MissionsPageModule' 
-        },
+         loadChildren: '../launches/launches.module#LaunchesPageModule' 
+      },
       {
          path: 'payload', 
-         loadChildren: './payload/payload.module#PayloadPageModule' 
+         loadChildren: '../payload/payload.module#PayloadPageModule' 
         },
       {
          path: 'rockets', 
-         loadChildren: './rockets/rockets.module#RocketsPageModule' 
+         loadChildren: '../rockets/rockets.module#RocketsPageModule' 
         },
       {
          path: 'roadster', 
-         loadChildren: './roadster/roadster.module#RoadsterPageModule' 
+         loadChildren: '../roadster/roadster.module#RoadsterPageModule' 
         },
       {
          path: 'ships', 
-         loadChildren: './ships/ships.module#ShipsPageModule' },
+         loadChildren: '../ships/ships.module#ShipsPageModule' },
       {
          path: 'missions', 
-         loadChildren: './missions/missions.module#MissionsPageModule' },
+         loadChildren: '../missions/missions.module#MissionsPageModule' },
     ]
   }
 ];
