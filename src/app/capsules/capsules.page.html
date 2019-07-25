@@ -7,8 +7,7 @@
 <ion-content>
 
   <ion-list>
-    <ion-item *ngFor="let c of capsules" [ngClass]="{'active': c.status , 'inactive': !c.status}"
-      class="ion-activatable" (click)="buttonClick(c.id)">
+    <ion-item *ngFor="let c of capsules" (click)="getOneCapsule(c.capsule_serial)">
       <ion-ripple-effect></ion-ripple-effect>
       <ion-label>
         {{ c.capsule_serial }} 

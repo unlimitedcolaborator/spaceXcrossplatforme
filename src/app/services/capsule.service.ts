@@ -24,4 +24,14 @@ export class CapsuleService {
       })
     );
   }
+
+  getOneCapsule(capsuleSerial): Observable<Capsules> {
+    const requestEndPoint = this.apiBaseUrl + 'capsules/' + capsuleSerial;
+    return this.http.get<any>(requestEndPoint).pipe(
+        map(capsule => {
+          return capsule;
+        })
+    );
+  }
+
 }

@@ -28,7 +28,7 @@ const routes: Routes = [
         loadChildren: '../landing-pads/landing-pads.module#LandingPadsPageModule'
       },
       {
-        path: 'LandingPads/details',
+        path: 'LandingPads/:id',
         loadChildren: '../details/details.module#DetailsPageModule'
       },
       {
@@ -47,6 +47,10 @@ const routes: Routes = [
       { 
         path: 'dragons', 
         loadChildren: '../dragons/dragons.module#DragonsPageModule' 
+      },
+      { 
+        path: 'dragons/:id', 
+        loadChildren: '../details-dragon/details-dragon.module#DetailsDragonPageModule' 
       },
       {
          path: 'history',
@@ -74,10 +78,8 @@ const routes: Routes = [
         },
       {
          path: 'ships', 
-         loadChildren: '../ships/ships.module#ShipsPageModule' },
-      {
-         path: 'missions', 
-         loadChildren: '../missions/missions.module#MissionsPageModule' },
+         loadChildren: '../ships/ships.module#ShipsPageModule' 
+        },
     ]
   }
 ];

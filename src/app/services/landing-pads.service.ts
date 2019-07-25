@@ -24,4 +24,14 @@ export class LandingPadsService {
       })
     );
   }
+  getLandingPadsById(id : String): Observable<LandingPads[]> {
+    const requestEndpoint = this.apiBaseUrl + 'landpads/' + id;
+    return this.http.get<LandingPads[]>(requestEndpoint).pipe(
+      // finalize(() => this.loader.stop()),
+      map(LandingPads => {
+        console.log(LandingPads);
+        return LandingPads;
+      })
+    );
+  }
 }

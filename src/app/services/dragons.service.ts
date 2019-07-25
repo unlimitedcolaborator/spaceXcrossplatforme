@@ -25,4 +25,15 @@ export class DragonsService {
       })
     );
   }
+  getDragonsById(id : String): Observable<Dragons[]> {
+    const requestEndpoint = this.apiBaseUrl + 'dragons/' + id;
+    return this.http.get<Dragons[]>(requestEndpoint).pipe(
+      // finalize(() => this.loader.stop()),
+      map(Dragons => {
+        console.log(Dragons);
+        return Dragons;
+      })
+    );
+  }
+
 }

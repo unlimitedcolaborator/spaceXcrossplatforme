@@ -6,7 +6,7 @@
 
 <ion-content>
     <ion-list>
-        <ion-item *ngFor="let l of landingPads">
+        <ion-item *ngFor="let l of landingPads" [routerLink]="['/menu/', 'LandingPads', l.id]">
           <ion-ripple-effect></ion-ripple-effect>
           <ion-label>
             {{ l.full_name }} 

@@ -5,8 +5,9 @@
 </ion-header>
 
 <ion-content>
+  
     <ion-list>
-    <ion-item *ngFor="let d of dragons" (click)="buttonClick(c.id)">
+    <ion-item *ngFor="let d of dragons"  [routerLink]="['/menu/', 'dragons', d.id]">
       <ion-ripple-effect></ion-ripple-effect>
       <ion-label>
         {{ d.name }} 

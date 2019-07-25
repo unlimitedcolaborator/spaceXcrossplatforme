@@ -1,9 +1,25 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>details</ion-title>
+    <ion-title> {{landingPads.full_name}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+    <ion-title>
+        Status : {{landingPads.status}}
+
+     </ion-title>
+      <ion-title>
+          location : 
+          <ion-title>
+              <ion-text>  
+                  nom : {{landingPads.location.name}} <br>
+                 </ion-text>     
+                 <ion-text>  
+                   region : {{landingPads.location.region}}
+                  </ion-text>
+            </ion-title>
+        </ion-title>
 
 </ion-content>
